@@ -9,6 +9,7 @@ WORKDIR /app
 # Install system essentials for FAISS/RapidFuzz
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
+    libgomp1 \
     && rm -rf /var/lib/apt/lists/*
 
 # Install python dependencies
