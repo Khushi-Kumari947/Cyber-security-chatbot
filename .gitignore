@@ -1,0 +1,64 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.pyc
+
+# ---- Virtual Environments ----
+env/
+venv/
+.venv/
+chatbot_env*/
+# Include your specific environment name from logs
+chatbot_env1/
+
+# ---- Environment Variables & Secrets ----
+# Never commit your AWS keys or bucket names
+.env
+.env.test
+.env.local
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.swp
+*.code-workspace
+
+# ---- Data & Large Assets ----
+# These are handled by your scripts/upload_faiss.py and s3_loader.py
+data/
+vector_store/
+cyber_model_tuned/
+/model/
+
+# ---- Machine Learning Artifacts ----
+*.index
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.bin
+*.pt
+*.pth
+*.model
+*.h5
+*.weights
+
+# ---- Datasets ----
+*.xlsx
+*.xls
+*.csv
+*.jsonl
+
+# ---- Logs & Cache ----
+*.log
+.cache/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ---- OS & Misc ----
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak

@@ -1,0 +1,17 @@
+# Ignore local environment
+chatbot_env/
+venv/
+.env
+
+# Ignore large data and model folders (S3 handles these)
+data/
+cyber_model_tuned/
+vector_store/
+*.csv
+*.index
+*.pkl
+
+# Ignore git and IDE settings
+.git
+.gitignore
+.vscode
